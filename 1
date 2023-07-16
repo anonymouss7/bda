@@ -1,11 +1,15 @@
 1. Install Java
 . – open cmd and type -> javac -version
+
 2. Download Hadoop
 • right click .rar.gz file -> show more options -> 7-zip->and extract to C:\Hadoop3.3.0\
+
 3. Set the path JAVA_HOME Environment variable
+
 4. Set the path HADOOP_HOME Environment variable
 Click on New to both user variables and system variables.
 Click on user variable -> path -> edit-> add path for Hadoop and java upto ‘bin’ 
+
 5. Configurations
 Edit file C:/Hadoop-3.3.0/etc/hadoop/core-site.xml,
 paste the xml code in folder and save
@@ -78,13 +82,17 @@ set JAVA_HOME="C:\Java\jdk1.8.0_361"
 ======================================================
 7. Download “redistributable” package
  Download and run VC_redist.x64.exe
+ 
 8. Hadoop Configurations
 Download bin folder from 
 https://github.com/s911415/apache-hadoop-3.1.0-winutils
 – Copy the bin folder to c:\hadoop-3.3.0. Replace the existing bin folder.
+
 9. copy "hadoop-yarn-server-timelineservice-3.0.3.jar" from ~\hadoop3.0.3\share\hadoop\yarn\timelineservice to ~\hadoop-3.0.3\share\hadoop\yarn folder. 
+
 10. Format the NameNode
 – Open cmd ‘Run as Administrator’ and type command “hdfs namenode –format”
+
 11. Testing
 – Open cmd ‘Run as Administrator’ and change directory to C:\Hadoop-3.3.0\sbin
 – type start-all.cmd
@@ -92,6 +100,8 @@ OR
 - type start-dfs.cmd
 – type start-yarn.cmd
 Output:
+
 12. Type JPS command to start-all.cmd command prompt, you will get following output.
+
 13. Run http://localhost:9870/ from any browser
 
