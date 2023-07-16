@@ -1,0 +1,76 @@
+Test Mongodb
+Step 1) Go to " C:\Program Files\MongoDB\Server\4.0\bin" and double click on mongo.exe.
+Alternatively, you can also click on the MongoDB desktop icon.
+• Create the directory where MongoDB will store its files.
+Open command prompt window and apply following commands
+C:\users\admin> cd\
+C:\>md data\db
+
+Step 2) Execute mongodb
+Open another command prompt window.
+C:\> cd C:\Program Files\MongoDB\Server\4.0\bin 
+C:\Program Files\MongoDB\Server\4.0\bin> mongod
+In case if it gives an error then run the following command:
+C:\Program Files\MongoDB\Server\4.0\bin> mongod –repair
+
+Step 3) Connect to MongoDB using the Mongo shell
+Let the MongoDB daemon to run.
+Open another command prompt window and run the following commands:
+C:\users\admin> cd C:\Program Files\MongoDB\Server\4.0\bin
+C:\Program Files\MongoDB\Server\4.0\bin>mongo
+
+Step 4) Install PyMongo
+Open another command prompt window and run the following commands:
+Check the python version on your desktop / laptop and copy that path from window explorer
+C:\users\admin>cd C:\Program Files\Python311\Scripts
+C:\Program Files\<Python38>\Scripts > python -m pip install pymongo
+Note: # -m option is for <module-name>
+Now you have downloaded and installed a mongoDB driver.
+
+Step 5) Test PyMongo
+Run the following command from python command prompt
+import pymongo
+Now, either create a file in Python IDLE or run all commands one by one in sequence on 
+Python cell
+Program 1: Creating a Database: create_dp.py
+import pymongo
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["mybigdata"]
+print(myclient.list_database_names())
+Progam 2: Creating a Collection: create_collection.py
+import pymongo
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["mybigdata"]
+mycol=mydb["student"]
+print(mydb.list_collection_names())
+Progam 3: Insert into Collection: insert_into_collection.py
+import pymongo
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["mybigdata"]
+mycol=mydb["student"]
+mydict={"name":"Beena", "address":"Mumbai"}
+x=mycol.insert_one(mydict) # insert_one(containing the name(s) and value(s) of each field
+Program 4: Insert Multiple data into Collection: insert_many.py
+import pymongo
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["mybigdata"]
+mycol=mydb["student"]
+mylist=[{"name":"Khyati", "address":"Mumbai"}, {"name":"Kruti", "address":"Mumbai"},
+{"name":"Nidhi", "address":"Pune"}, {"name":"Komal", "address":"Pune"},]
+x=mycol.insert_many(mylist)
+
+Step 6) Test in Mongodb to check database and data inserted in collection
+a. If you want to check your database list, use the command show dbs in mongo
+command prompt
+> show dbs
+b. If you want to use a database with name mybigdata, then use database
+statement would be as follow:
+> use mybigdata
+c. If you want to check collection in mongodb use the command show collections
+> show collections
+d. If you want to display the first row from collection: db.collection_name.find()
+> db.student.findOne()
+e. If you want to display all the data from collection: db.collection_name.find()
+> db.student.find()
+f. count number of rows in a collection
+> db.student.count()
