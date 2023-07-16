@@ -1,16 +1,11 @@
 1. Install Java
-11. – Java JDK Link to download
-https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
-12. – extract and install Java in C:\Java
-13. – open cmd and type -> javac -version
+. – open cmd and type -> javac -version
 2. Download Hadoop
-https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.0/hadoop3.3.0.tar.gz
 • right click .rar.gz file -> show more options -> 7-zip->and extract to C:\Hadoop3.3.0\
 3. Set the path JAVA_HOME Environment variable
 4. Set the path HADOOP_HOME Environment variable
 Click on New to both user variables and system variables.
 Click on user variable -> path -> edit-> add path for Hadoop and java upto ‘bin’ 
-Click Ok, Ok, Ok.
 5. Configurations
 Edit file C:/Hadoop-3.3.0/etc/hadoop/core-site.xml,
 paste the xml code in folder and save
@@ -83,9 +78,6 @@ set JAVA_HOME="C:\Java\jdk1.8.0_361"
 ======================================================
 7. Download “redistributable” package
  Download and run VC_redist.x64.exe
-This is a “redistributable” package of the Visual C runtime code for 64-bit applications, from 
-Microsoft. It contains certain shared code that every application written with Visual C 
-expects to have available on the Windows computer it runs on.
 8. Hadoop Configurations
 Download bin folder from 
 https://github.com/s911415/apache-hadoop-3.1.0-winutils
@@ -99,8 +91,6 @@ https://github.com/s911415/apache-hadoop-3.1.0-winutils
 OR
 - type start-dfs.cmd
 – type start-yarn.cmd
-– You will get 4 more running threads for Datanode, namenode, resouce manager and 
-node manager
 Output:
 12. Type JPS command to start-all.cmd command prompt, you will get following output.
 13. Run http://localhost:9870/ from any browser
