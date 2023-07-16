@@ -1,7 +1,6 @@
 Aim:
 a) Implement Decision Tree classification technique using Social_Network_Ads.csv dataset.
 Code:
-# Decision Tree Classification
 # Importing the dataset
 dataset = read.csv("C:\\2022-23\\BDA PRACTICAL 2023\\Social_Network_Ads.csv")
 #print(dataset)
