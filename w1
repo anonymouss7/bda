@@ -1,0 +1,12 @@
+Practical No 1 
+Aim: Generate forecasting model and interpret the result for a given data
+set.
+Steps:
+1. Create excel file iris.csv
+
+2. Open Weka >click Explorer > click open file > select file iris.csv file.
+
+3. Click on Cluster tab, click on choose >select SimplekMeans.
+
+4. Click on Start.You can see the simpleKMeans on the Clustered
+output.
