@@ -1,0 +1,18 @@
+Practical No 3 
+Aim: Pre-process the given data set and hence apply hierarchical algorithms and
+density based clustering techniques. Interpret the result.
+Steps:
+1. Create excel file iris.csv
+
+2. Open Weka >click Explorer > click open file > select file iris.csv file.
+
+3. Click on Cluster tab, click on choose >select HierarchicalClusterer.
+
+4. Click on Start.You can see the Hierarchical clustering on the Clustered output.
+
+5. In Result list ,right click on result > select visualize tree.
+
+6. Now click on cluster name ,a window will appear select linktype as complete and
+click on ok. Again click on start.
+
+7. Right click on result list > select visualize tree
