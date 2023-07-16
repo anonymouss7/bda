@@ -1,0 +1,11 @@
+Practical No 5 16/03/23
+Aim: Pre-process the given dataset and hence classify the resultant data
+set using statistical based classifiers. Interpret the result
+Steps:
+1. Open Weka >click Explorer > click open file > select file iris.arff . 2. Click on choose > filter > unsupervised > attribute >
+RemovePercentage and on apply
+
+3. Click on Classify tab, click on choose > bayes > select
+NaiveBayes.
+
+4. Click on Start.
