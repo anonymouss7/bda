@@ -1,0 +1,9 @@
+Practical No:7 Date: 04 /04/2023
+AIM :Write a program to explain different function of Principal components
+
+install.packages("FactoMineR")
+library(FactoMineR)
+install.packages("ade4")
+library(ade4)
+install.packages("amap")
+library(amap)
