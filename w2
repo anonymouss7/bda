@@ -1,0 +1,9 @@
+Practical No. 2 
+Aim : Pre-process the given dataset and hence apply partition clustering
+algorithms.Interpret the result
+1. Open Weka >click Explorer > click open file > select file iris.arff file.
+
+2. In pre-process window,click on choose > weka> filter> unsupervised>
+attribute> PartitionedMultiFilter and click on apply
+
+3. click on visualize all to display all partitioning
