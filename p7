@@ -1,4 +1,4 @@
-Practical No:7 Date: 04 /04/2023
+Practical No:7 
 AIM :Write a program to explain different function of Principal components
 
 install.packages("FactoMineR")
@@ -7,3 +7,38 @@ install.packages("ade4")
 library(ade4)
 install.packages("amap")
 library(amap)
+
+> head (iris)
+
+d<-iris[,1:4];﻿﻿
+d<-iris[,-5]
+head (d)
+
+pc <- princomp (d, cor=TRUE, score=TRUE)
+﻿﻿summary (pc)
+
+plot (pc)
+
+pc=acp (USArrests)
+pc$eig
+
+pc$loadings
+
+head (pc$scores)
+
+pc=PCA (USArrests, graph=FALSE)
+> pc$eig
+
+pc$var$coord
+
+pc=dudi.pca (USArrests, nf=5, scannf=FALSE)
+﻿﻿pc$eig
+
+pc=prcomp() po=prcomp(USArrests, scale. =TRUE)
+
+pc=prcomp (USArrests, scale. =TRUE)
+﻿﻿pc$sdev
+
+> head (pc$rotation)
+
+> head (pc$x)
