@@ -27,7 +27,7 @@ pc$loadings
 head (pc$scores)
 
 pc=PCA (USArrests, graph=FALSE)
-> pc$eig
+pc$eig
 
 pc$var$coord
 
